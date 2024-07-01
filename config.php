@@ -15,13 +15,13 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-
+/*
 // Read the INI file
 $config = parse_ini_file('printer.ini', true);
 
 // Check if the file was successfully parsed
 if ($config === false) {
-    echo('Error: Unable to parse printer.ini');
+    die('Error: Unable to parse printer.ini');
 }
 
 // Access the data as variables
@@ -33,12 +33,12 @@ $socket = @fsockopen($printer_ip, $printer_port, $errno, $errstr, 10);
 
 // Check if the connection was successful, this is to stop the operation if printer connection isn't established
 if (!$socket) {
-    echo("Error: Unable to connect to printer. Error: $errno - $errstr");
+    die("Error: Unable to connect to printer. Error: $errno - $errstr");
 }
 
 // Close the socket connection
 fclose($socket);
 
 // Proceed with further execution since the connection was successful
-
+*/
 ?>
