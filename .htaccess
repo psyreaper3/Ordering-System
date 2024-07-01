@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Route requests for specific files directly
+RewriteRule ^food_menu/survey$ survey.php [L]
+
+# For other requests, route them to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+RewriteRule ^food_menu/survey$ survey.php [L]
