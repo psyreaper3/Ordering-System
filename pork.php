@@ -31,7 +31,7 @@ if (isset($_GET['unset_cart']) && $_GET['unset_cart'] == '1') {
 }
 
 // Include database connection
-include '../avodah/config.php';
+include 'config.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $productId = $_POST['product_id'];
@@ -405,8 +405,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <!-- PHP code for fetching and displaying inventory items -->
  
             <?php
-                // Include database connection
-                include '../avodah/config.php';
                 // Display inventory items grouped by category
                 // Fetch inventory data from the database
                 $categories = array("Appetizers", "Salads", "Pasta", "Solo Meal", "To Share", "Pizza", "Desserts", "Drinks");
