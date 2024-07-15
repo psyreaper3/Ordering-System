@@ -1,5 +1,5 @@
 # Ordering-System
-This is an ordering System I created for Avodah Kitchen (the uploaded file is part of the bigger system that i have created), i'm using it for the sole purpose of getting a hired for a job
+I am Louie Jay Orellana Jayme, and this is an ordering System I created for Avodah Kitchen (the uploaded file is part of the bigger system that i have created), i'm using it for the sole purpose of getting a hired for a job
 
 Requirements: a running web server (xampp or lampp)
 Once installed you will need to go to http://localhost/phpmyadmin and add a database, you can rename it however you want but you'll need to change the name in config.php too the default database name is avodah_emp
